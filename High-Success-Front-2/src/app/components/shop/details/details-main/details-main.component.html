@@ -1,0 +1,52 @@
+<nav-bar-shop></nav-bar-shop>
+<div class="container content-details">
+  <div class="row justify-content-end">
+    <div class="col-md-4">
+      <div class="text-center">
+        <span class="info-text-bold">HOODIE</span>
+      </div>
+      <div class="details mt-3">
+        <span class="info-text mt-1">PRECIO</span>
+        <span class="info-text mt-1">&nbsp;&nbsp;&nbsp;&nbsp;{{utils.formatter.format(precios[1])
+        }}</span>
+      </div>
+      <div class="mt-5" >
+        <span class="info-text ">Tallas</span>
+        <div  class=" mt-2">
+          <div *ngFor="let talla of tallas;"  (click)="selectSize(talla.name, $event)" class="size-box col-md-1 text-center">{{talla.showName}}</div>
+        </div>
+      </div>
+
+      <div class="row mt-5">
+        <a href="" class="info-text"><span class="info-text">Guía de tallas</span></a>
+      </div>
+      <div class="mt-5">
+        <button type="submit" class="button-buy button-buy-text" >Agregar al Carrito</button>
+      </div>
+      <div class="text-center mt-5">
+        <span>Sudadera con impresión de algún <br>rincón de México</span>
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+    <div class="col-md-7 row no-margin justify-content-end">
+      <image-details class="col-md-6 no-margin" style="padding: 0 0 0 0" [urlImage]="'https://high-success.s3.us-east-2.amazonaws.com/assets/foto2.png'"></image-details>
+      <image-details class="col-md-6 no-margin" style="padding: 0 0 0 0"  [urlImage]="'https://high-success.s3.us-east-2.amazonaws.com/assets/foto1.png'"></image-details>
+    </div>
+  </div>
+  <div class="row text-center mt-5">
+    <span class="info-text">Lo que te llevas al adquirir este producto</span>
+  </div>
+  <div class="row text-center mt-5">
+    <div class="col-md-4">
+      <img class="image-details" src="https://high-success.s3.us-east-2.amazonaws.com/assets/1++1.png" alt="">
+    </div>
+    <div class="col-md-4">
+      <img class="image-details" src="https://high-success.s3.us-east-2.amazonaws.com/assets/foto1.png" alt="">
+
+    </div>
+    <div class="col-md-4">
+      <img class="image-details" src="https://high-success.s3.us-east-2.amazonaws.com/assets/foto1.png" alt="">
+
+    </div>
+  </div>
+</div>

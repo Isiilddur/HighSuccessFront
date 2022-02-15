@@ -1,0 +1,26 @@
+.image-shop{
+  height: 90%;
+  display: block;
+  margin-top: 2em;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+ngb-carousel .picsum-img-wrapper {
+    position: absolute;
+    height: 0;
+}
+
+ngb-carousel .picsum-img-wrapper>img {
+    position: center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.sr-only {
+    display: none !important;
+}
+
+

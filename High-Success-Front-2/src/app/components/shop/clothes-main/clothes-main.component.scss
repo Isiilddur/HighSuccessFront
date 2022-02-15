@@ -1,0 +1,35 @@
+.div-clothe-shop{
+  height: 300px;
+  display: block;
+  margin-top: 2em;
+
+}
+
+.image-shop{
+  height: 100%;
+  display:block;
+}
+
+.button-buy{
+  width: 50%;
+  height: 80%;
+  left: 608px;
+  top: 495px;
+  background: transparent;
+  border: 2px solid black;
+  box-sizing: border-box;
+  cursor:pointer;
+}
+
+.button-buy-text{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: larger;
+  line-height: 40px;
+  /* identical to box height */
+  color: black;
+  text-align: center;
+}
+
+

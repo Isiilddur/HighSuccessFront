@@ -1,0 +1,11 @@
+<div class="row mt-3">
+  <div *ngFor="let item of items;" class="col-md-4 div-clothe-shop text-center justify-content-center">
+    <div class="mb-3 text-center justify-content-center">
+      <img src="{{item.imagesKey[0]}}"  alt="">
+    </div>
+    <div>
+      <button type="submit" class="button-buy button-buy-text" routerLink="{{'/shop/details/'+item.id}}">Comprar</button>
+    </div>
+  </div>
+</div>
+
